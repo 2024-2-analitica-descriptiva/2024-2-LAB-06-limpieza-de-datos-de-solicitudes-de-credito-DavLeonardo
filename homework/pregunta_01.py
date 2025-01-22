@@ -8,7 +8,6 @@ from tqdm import tqdm  # type: ignore
 
 fake = Faker()
 
-
 def generate_fake_drivers(n):
     """Generate n fake records.
 
@@ -44,6 +43,7 @@ def save_fake_data(fake_data, filename):
         writer.writeheader()
         for record in fake_data:
             writer.writerow(record)
+
 
 
 def generate_fake_timesheet(drivers, n):
